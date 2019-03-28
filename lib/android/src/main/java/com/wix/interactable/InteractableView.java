@@ -111,8 +111,17 @@ public class InteractableView extends ViewGroup implements PhysicsAnimator.Physi
         if(reportOnAnimatedEvents) {
             listener.onAnimatedEvent(currentPosition.x, currentPosition.y);
         }
+        if (currentPosition.x > this.boundaries.getRight()) {
+            this.setTranslationX(this.boundaries.getRight());
+            this.setVelocity(new PointF(0, 0));
+        }
+        if (currentPosition.x < this.boundaries.getLeft()) {
+            this.setTranslationX(this.boundaries.getLeft());
+            this.setVelocity(new PointF(0, 0));
+        }
         reportAlertEvent(currentPosition);
     }
+
 
     private void reportAlertEvent(PointF position) {
         for (InteractablePoint area : alertAreas) {
