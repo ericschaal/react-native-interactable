@@ -1,6 +1,6 @@
 {
   "name": "@my01/react-native-interactable",
-  "version": "1.0.0",
+  "version": "1.0.0-alpha2",
   "description": "High performance interactable views in React Native",
   "license": "MIT",
   "author": "Tal Kol <talkol@gmail.com>",
@@ -38,18 +38,18 @@
     "preset": "react-native"
   },
   "devDependencies": {
-    "@types/react-native": ">= 0.52.2",
-    "detox": "^12.0.0",
-    "mocha": "^5.0.5",
-    "react": "16.8.3",
-    "react-native": "0.59.3",
     "@babel/core": "^7.4.0",
     "@babel/runtime": "^7.4.2",
     "@react-native-community/eslint-config": "^0.0.3",
+    "@types/react-native": ">= 0.52.2",
     "babel-jest": "^24.5.0",
+    "detox": "^12.0.0",
     "eslint": "^5.16.0",
     "jest": "^24.5.0",
     "metro-react-native-babel-preset": "^0.53.1",
+    "mocha": "^5.0.5",
+    "react": "16.8.3",
+    "react-native": "0.59.3",
     "react-test-renderer": "16.8.3"
   },
   "typings": "typings/react-native-interactable.d.ts",
