@@ -1,4 +1,4 @@
-declare module 'react-native-interactable' {
+declare module '@my01/react-native-interactable' {
 
   import {Animated, ViewProperties, ViewStyle} from 'react-native';
 
